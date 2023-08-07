@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservations - Restaurant Name</title>
+    <link rel="stylesheet" href="reservation.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html#about">About Us</a></li>
+                <li><a href="index.html#menu">Our Menu</a></li>
+                <li><a href="#reservations">Reservations</a></li>
+                <li><a href="index.html#events">Events & Private Dining</a></li>
+                <li><a href="index.html#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="reservations" style="background-image: url('reservation_background.jpg');">
+        <div class="reservation-form">
+            <h1>Reservations</h1>
+            <p>
+                To ensure a seamless dining experience, we encourage you to make a reservation in advance. Whether it's
+                for an intimate dinner for two or a group celebration, our team will be delighted to welcome you.
+            </p>
+            <form action="submit_reservation.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time" required>
+
+                <label for="guests">Number of Guests:</label>
+                <input type="number" id="guests" name="guests" required>
+
+                <input type="submit" value="Make Reservation">
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Restaurant Name. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
